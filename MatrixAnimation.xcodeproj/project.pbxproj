@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		914086372686677D0020E625 /* MatrixAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914086362686677D0020E625 /* MatrixAnimationApp.swift */; };
-		914086392686677D0020E625 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914086382686677D0020E625 /* ContentView.swift */; };
+		914086392686677D0020E625 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914086382686677D0020E625 /* AnimationView.swift */; };
 		9140863B2686677E0020E625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9140863A2686677E0020E625 /* Assets.xcassets */; };
 		9140863E2686677E0020E625 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9140863D2686677E0020E625 /* Preview Assets.xcassets */; };
 		914086492686677E0020E625 /* MatrixAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914086482686677E0020E625 /* MatrixAnimationTests.swift */; };
 		914086542686677E0020E625 /* MatrixAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914086532686677E0020E625 /* MatrixAnimationUITests.swift */; };
+		914A3AF7268734AE00C8874E /* MatrixElementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A3AF6268734AE00C8874E /* MatrixElementViewModel.swift */; };
+		914A3AF9268736B400C8874E /* MatrixElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A3AF8268736B400C8874E /* MatrixElement.swift */; };
+		9184E4CC26866CE40044DF86 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184E4CB26866CE40044DF86 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 /* Begin PBXFileReference section */
 		914086332686677D0020E625 /* MatrixAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		914086362686677D0020E625 /* MatrixAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAnimationApp.swift; sourceTree = "<group>"; };
-		914086382686677D0020E625 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		914086382686677D0020E625 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		9140863A2686677E0020E625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9140863D2686677E0020E625 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9140863F2686677E0020E625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +48,9 @@
 		9140864F2686677E0020E625 /* MatrixAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		914086532686677E0020E625 /* MatrixAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAnimationUITests.swift; sourceTree = "<group>"; };
 		914086552686677E0020E625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		914A3AF6268734AE00C8874E /* MatrixElementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixElementViewModel.swift; sourceTree = "<group>"; };
+		914A3AF8268736B400C8874E /* MatrixElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixElement.swift; sourceTree = "<group>"; };
+		9184E4CB26866CE40044DF86 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				914086362686677D0020E625 /* MatrixAnimationApp.swift */,
-				914086382686677D0020E625 /* ContentView.swift */,
+				914086382686677D0020E625 /* AnimationView.swift */,
+				9184E4CB26866CE40044DF86 /* MainView.swift */,
+				914A3AF8268736B400C8874E /* MatrixElement.swift */,
+				914A3AF6268734AE00C8874E /* MatrixElementViewModel.swift */,
 				9140863A2686677E0020E625 /* Assets.xcassets */,
 				9140863F2686677E0020E625 /* Info.plist */,
 				9140863C2686677E0020E625 /* Preview Content */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914086392686677D0020E625 /* ContentView.swift in Sources */,
+				914A3AF9268736B400C8874E /* MatrixElement.swift in Sources */,
+				914086392686677D0020E625 /* AnimationView.swift in Sources */,
+				914A3AF7268734AE00C8874E /* MatrixElementViewModel.swift in Sources */,
+				9184E4CC26866CE40044DF86 /* MainView.swift in Sources */,
 				914086372686677D0020E625 /* MatrixAnimationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
